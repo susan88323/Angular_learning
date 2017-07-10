@@ -1,0 +1,114 @@
+<div class="container">
+	<div class="title">
+		<h4>Configure Site</h4>
+	</div>
+	<form [formGroup]="siteForm" (ngSubmit)="onSubmit()">
+		<div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            formControlName="name"
+            class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input
+            type="text"
+            id="address-line1"
+            formControlName="addressLine1"
+            class="form-control">
+            <br>
+          <input
+            type="text"
+            id="address-line2"
+            formControlName="addressLine2"
+            class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="form-group">
+          <label for="city">City</label>
+          <input
+            type="text"
+            id="city"
+            formControlName="city"
+            class="form-control">
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="form-group">
+          <label for="province">Province/State</label>
+          <input
+            type="text"
+            id="province"
+            formControlName="province"
+            class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="form-group">
+          <label for="postal">Postal/Zip Code</label>
+          <input
+            type="text"
+            id="postal"
+            formControlName="postal"
+            class="form-control">
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input
+            type="text"
+            id="country"
+            formControlName="country"
+            class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="form-group">
+          <label for="inbound-digits">Inbound Digits</label>
+          <input
+            type="text"
+            id="inbound-digits"
+            formControlName="inboundDigits"
+            class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="form-group">
+          <label for="outbound-digits">Outbound Digits</label>
+          <input
+            type="text"
+            id="outbound-digits"
+            formControlName="outboundDigits"
+            class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-9 ">
+      	<button type="button" class="btn btn-default" (click)="goBack()">Back</button>
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="!siteForm.valid">Next</button>
+      </div>
+    </div>
+  </form>
+</div>

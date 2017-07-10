@@ -1,0 +1,59 @@
+<div class="dashboard">
+	<div class="container">
+		<div class="information">
+			<div class="row">
+				<div class="col-xs-6">
+					<h3>Partner Account</h3>
+				</div>
+				<div class="col-xs-6">
+					<i class="glyphicon glyphicon-pencil pull-right"></i>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<p>XYZ Mirage Systems</p>
+					<p>123 Fake St., Scottsdale</p>
+					<p>AZ, USA 563462</p>
+				</div>
+				<div class="col-xs-6">
+					<p>Technical: test@test.com</p>
+					<p>Commercial: test@test.com</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="action">
+			<button type="button" class="btn btn-primary" (click)="createCustomer()">Create Customer</button>
+		</div>
+		<hr>
+		<div class="details">
+			<div class="row">
+				<div class="col-xs-6">
+					<a>Customer Name <i class="fa fa-angle-down" aria-hidden="true" style="font-size:18px"></i></a>
+				</div>
+				<div class="col-xs-6">
+					<form action="#" method="get">
+                <div class="input-group">
+                		<span class="input-group-addon">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </span>
+                    <input class="form-control" id="system-search" name="q" placeholder="Search" required>
+                </div>
+            </form>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<ul id="sortable" class="list-unstyled">
+      <li class="ui-state-default">
+          <app-site-list-item siteName="site1"></app-site-list-item>
+      </li>
+      <li class="ui-state-default">
+          <app-site-list-item siteName="site2"></app-site-list-item>
+      </li>
+      <li class="ui-state-default">
+          <app-site-list-item siteName="site3"></app-site-list-item>
+      </li>
+  </ul>
+	</div>
+</div>

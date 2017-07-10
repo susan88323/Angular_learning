@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="title">
+		<h4>Pre-requisites Checklist</h4>
+	</div>
+	<div class="content">
+		<p class="description">Please check and verify that the following actions have been performed prior to continuing</p>
+		<ul class="checklist">
+			<li *ngFor="let item of items; let i = index">
+				{{ item }}
+				<span *ngIf="i === 3 || i === 4 || i === 5 || i === 6" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+			</li>
+		</ul>
+	</div>
+	<div class="actions pull-right">
+		<button type="button" class="btn btn-default">Back</button>
+		<button type="button" class="btn btn-primary">Next</button>
+	</div>
+</div>
